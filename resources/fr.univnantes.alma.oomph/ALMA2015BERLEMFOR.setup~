@@ -68,7 +68,11 @@
   <setupTask
       xsi:type="git:GitCloneTask"
       id="git.clone.acceleo"
+<<<<<<< HEAD
       remoteURI="https://github.com/alma2015BERLEMFOR/alma2015BERLEMFOR.git">
+=======
+      remoteURI="acceleo/org.eclipse.acceleo">
+>>>>>>> 79ef63a6db7f842bea855de94e1a249cf460c114
     <annotation
         source="http://www.eclipse.org/oomph/setup/InducedChoices">
       <detail
