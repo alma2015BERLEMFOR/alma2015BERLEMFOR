@@ -68,7 +68,7 @@
   <setupTask
       xsi:type="git:GitCloneTask"
       id="git.clone.acceleo"
-      remoteURI="acceleo/org.eclipse.acceleo">
+      remoteURI="https://github.com/alma2015BERLEMFOR/alma2015BERLEMFOR.git">
     <annotation
         source="http://www.eclipse.org/oomph/setup/InducedChoices">
       <detail
@@ -208,18 +208,7 @@
       xsi:type="projects:ProjectsImportTask"
       id="org.eclipse.acceleo.project.import">
     <sourceLocator
-        rootFolder="${git.clone.acceleo.location}/features"/>
-    <sourceLocator
-        rootFolder="${git.clone.acceleo.location}/plugins"/>
-    <sourceLocator
-        rootFolder="${git.clone.acceleo.location}/releng"/>
-    <sourceLocator
-        rootFolder="${git.clone.acceleo.location}/tests">
-      <excludedPath>org.eclipse.acceleo.maven.tests</excludedPath>
-      <excludedPath>org.eclipse.acceleo.maven.plugin.tests</excludedPath>
-    </sourceLocator>
-    <sourceLocator
-        rootFolder="${git.clone.acceleo.location}/query"/>
+        rootFolder="${git.clone.acceleo.location}/resources"/>
     <description>Import the Acceleo projects in the workspace</description>
   </setupTask>
   <setupTask
