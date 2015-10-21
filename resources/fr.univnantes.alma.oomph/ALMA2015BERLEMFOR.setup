@@ -13,8 +13,8 @@
     xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0"
     xmlns:setup.workingsets="http://www.eclipse.org/oomph/setup/workingsets/1.0"
     xsi:schemaLocation="http://www.eclipse.org/oomph/setup/git/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Git.ecore http://www.eclipse.org/oomph/setup/jdt/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/JDT.ecore http://www.eclipse.org/oomph/setup/mylyn/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Mylyn.ecore http://www.eclipse.org/oomph/setup/pde/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/PDE.ecore http://www.eclipse.org/oomph/predicates/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Predicates.ecore http://www.eclipse.org/oomph/setup/projects/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Projects.ecore http://www.eclipse.org/oomph/setup/workingsets/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/SetupWorkingSets.ecore"
-    name="acceleo"
-    label="Acceleo">
+    name="ALMA2015BERLEMFOR"
+    label="ALMA2015BERLEMFOR">
   <setupTask
       xsi:type="jdt:JRETask"
       version="JavaSE-1.6"
@@ -69,6 +69,7 @@
       xsi:type="git:GitCloneTask"
       id="git.clone.acceleo"
       remoteURI="https://github.com/alma2015BERLEMFOR/alma2015BERLEMFOR.git">
+      <!--remoteURI="alma2015BERLEMFOR/alma2015BERLEMFOR/com.github">-->
     <annotation
         source="http://www.eclipse.org/oomph/setup/InducedChoices">
       <detail
@@ -248,11 +249,11 @@
   <setupTask
       xsi:type="setup:EclipseIniTask"
       option="-Doomph.redirection.accelleo="
-      value="https://git.eclipse.org/c/acceleo/org.eclipse.acceleo.git/plain/releng/org.eclipse.acceleo.releng/Acceleo.setup->${git.clone.acceleo.location|uri}/releng/org.eclipse.acceleo.releng/Acceleo.setup"
+      value="https://git.eclipse.org/c/acceleo/org.eclipse.acceleo.git/plain/releng/org.eclipse.acceleo.releng/Acceleo.setup->${git.clone.acceleo.location|uri}/resources/fr.univnantes.alma.oomph/ALMA2015BERLEMFOR.setup"
       vm="true"/>
   <stream name="master"/>
   <logicalProjectContainer
       xsi:type="setup:ProjectCatalog"
       href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']"/>
-  <description>Acceleo is an open source code generator used to generate any kind of text files from EMF models.</description>
+  <description>ALMA2015BERLEMFOR is a project...</description>
 </setup:Project>
