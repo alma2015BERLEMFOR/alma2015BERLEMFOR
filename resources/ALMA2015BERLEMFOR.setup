@@ -89,9 +89,9 @@
         <operand
             xsi:type="predicates:NamePredicate"
             pattern="fr.univnantes.alma.oomph"/>
-        <!--<operand
+    	<operand
             xsi:type="predicates:NamePredicate"
-            pattern="fr.univnantes.alma.resources"/>-->
+            pattern="fr.univnantes.alma.resources"/>
         <operand
             xsi:type="predicates:RepositoryPredicate"
             project="alma2015BERLEMFOR"/>
@@ -106,13 +106,13 @@
         rootFolder="${git.clone.location}/resources/fr.univnantes.alma.oomph"/>
     <description></description>
   </setupTask>
-  <!--<setupTask
+  <setupTask
       xsi:type="projects:ProjectsImportTask"
       id="fr.univnantes.project.import">
     <sourceLocator
-        rootFolder="${git.clone.location}/resources/fr.univnantes.alma.oomph"/>
+        rootFolder="${git.clone.location}/resources/fr.univnantes.alma.resources"/>
     <description></description>
-  </setupTask>-->
+  </setupTask>
   <stream name="master"
       label="Master"/>
   <logicalProjectContainer
