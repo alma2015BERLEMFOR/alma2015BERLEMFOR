@@ -55,8 +55,8 @@
         url="http://eclipse-cs.sourceforge.net/update/"/>
     <repository
         url="http://download.eclipse.org/releases/mars"/>
-<repository
-        url="http://findbugs.cs.umd.edu/eclipse"/>
+<!--<repository
+        url="http://findbugs.cs.umd.edu/eclipse"/>-->
     <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
   </setupTask>
   <setupTask
@@ -112,6 +112,14 @@
     <sourceLocator
         rootFolder="${git.clone.location}/resources/fr.univnantes.alma.resources"/>
     <description></description>
+  </setupTask>
+	<setupTask
+	  xsi:type="setup:ResourceCreationTask"
+	  excludedTriggers="BOOTSTRAP"
+	  content='your checkstyle config file content'
+      targetURL="${workspace.location|uri}/fr.univnantes.alma.resources/checkstyle-config.xml"
+      encoding="UTF-8">
+    <description>Initialize checkstyle tool</description>
   </setupTask>
   <stream name="master"
       label="Master"/>
