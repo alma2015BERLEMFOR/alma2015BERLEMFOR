@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="true" key="liveValidator"/>
+	<section name="org.eclipse.oomph.setup.presentation.EnablementDialog">
+		<item value="400" key="dialogHeight"/>
+		<item value="650" key="dialogWidth"/>
+	</section>
+</section>
