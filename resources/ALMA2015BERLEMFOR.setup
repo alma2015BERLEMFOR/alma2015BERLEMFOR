@@ -66,7 +66,7 @@
   <setupTask
       xsi:type="git:GitCloneTask"
       id="git.clone"
-      remoteURI="Cr3aHal0/alma2015BERLEMFOR">
+      remoteURI="alma2015BERLEMFOR/alma2015BERLEMFOR">
     <annotation
         source="http://www.eclipse.org/oomph/setup/InducedChoices">
       <detail
